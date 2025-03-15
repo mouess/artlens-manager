@@ -80,6 +80,7 @@ function ContactPage() {
                 <th>Nom</th>
                 <th>Email</th>
                 <th>Téléphone</th>
+                <th>Message</th>
                 <th>Supprimer</th>
               </tr>
             </thead>
@@ -89,6 +90,7 @@ function ContactPage() {
                   <td>{c.name}</td>
                   <td>{c.email}</td>
                   <td>{c.phone}</td>
+                  <td>{c.message}</td>
                   <td>
                     <button className="delete-button" onClick={() => handleDeleteContact(c.id)}>Supprimer</button>
                   </td>
